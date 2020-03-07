@@ -31,8 +31,9 @@
             wrapper.appendTo(this.wrap);
         }
         initStyle() {
-            let self = this
-            $(this.wrap).css({
+            let self = this;
+            console.log(this.wrap)
+            this.wrap.css({
                 position: 'relative'
             }).hover(function() {
                 $('.dropDownWrapper', self.wrap).css({
@@ -57,7 +58,8 @@
                     width: this.width,
                     top: 29,
                     backgroundColor: 'white',
-                    display: 'none'
+                    display: 'none',
+                    zIndex: 99 //若其它层级高于此，将影响展示
                 })
                 if (this.list.length > 1) {
                     this.wrap.find('dl:not(:first)').css({
@@ -81,7 +83,8 @@
                     backgroundColor: 'white',
                     display: 'none',
                     right: -87,
-                    padding: '15px 0'
+                    padding: '15px 0',
+                    zIndex: 99 //若其它层级高于此，将影响展示
                 });
                 this.wrap.find('.dropDownWrapper dl').css({
                     float: 'left',
