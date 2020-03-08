@@ -102,6 +102,164 @@ body {
 
 
 /* .nav .content .navRight .dropDownWrapper dl dd {
+
     float: left;
     width: 130px;
 } */
+
+.allPage .header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.allPage .header .contain {
+    position: relative;
+    height: 140px;
+    width: 990px;
+    margin: 0 auto;
+}
+
+.allPage .header .contain .logo {
+    position: absolute;
+    width: 150px;
+    height: 120px;
+    top: calc(50% - 60px);
+    background-image: url(http://img1.360buyimg.com/da/jfs/t1/22564/1/11477/148715/5c90a530Ec7990367/4f1049c024103f2b.gif?v=0.5530435466565358);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.allPage .header .contain .center {
+    position: absolute;
+    width: 620px;
+    left: 200px;
+    top: 30px;
+}
+
+.allPage .header .contain .center .topSearch {}
+
+.allPage .header .contain .center .topSearch .search {
+    position: relative;
+    overflow: hidden;
+}
+
+.allPage .header .contain .center .topSearch input {
+    float: left;
+    width: 367px;
+    height: 26px;
+    border: 2px solid #e1251b;
+    padding: 2px 44px 2px 17px;
+    outline: none;
+    color: #333;
+    line-height: 26px;
+}
+
+.allPage .header .contain .center .topSearch .searchPhoto {
+    position: absolute;
+    left: 390px;
+    top: calc(50% - 10px);
+    width: 20px;
+    height: 20px;
+    background-image: url('./img/相机.png');
+    background-size: cover;
+    cursor: pointer;
+}
+
+.allPage .header .contain .center .topSearch button {
+    margin-left: 0px;
+    width: 58px;
+    height: 34px;
+    border: none;
+    box-sizing: border-box;
+    background-color: #e1251b;
+    background-image: url('./img/放大镜.png');
+    background-size: 35%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.allPage .header .contain .center .topSearch button:hover {
+    background-color: #c81623;
+}
+
+.allPage .header .contain .center .topSearch .shopStore {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    height: 34px;
+    padding: 0 8px;
+    border: 1px solid #eeeeee;
+    box-sizing: border-box;
+    line-height: 34px;
+}
+
+.allPage .header .contain .center .topSearch .shopStore .storeBus {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    /* margin-top: 10px; */
+    background-image: url('./img/购物车空.png');
+    background-size: cover;
+    background-position: center;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.allPage .header .contain .center .topSearch .shopStore .shopCount {
+    position: absolute;
+    line-height: 12px;
+    min-width: 12px;
+    left: 15px;
+    top: 3px;
+    /* border: 1px solid green; */
+    padding: 1px 3px;
+    color: black;
+    text-align: center;
+    border-radius: 7px;
+    font-size: 12px;
+    background-color: red;
+    color: white;
+}
+
+.allPage .header .contain .center .topSearch .shopStore a {
+    /* vertical-align: middle; */
+    color: red;
+}
+
+.allPage .header .contain .center .topSearch .hotWords a {
+    margin: 0px 10px 0px 0px;
+    line-height: 20px;
+}
+
+.allPage .header .contain .center .topSearch .hotWords a:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.allPage .header .contain .center .topSearch .hotWords a:nth-of-type(1) {
+    color: red;
+}
+
+.allPage .header .contain .center .bottomOptions {
+    padding-top: 20px;
+    width: 100%;
+    font-size: 15px;
+}
+
+.allPage .header .contain .center .bottomOptions span {
+    margin-left: 1px;
+    cursor: pointer;
+}
+
+.allPage .header .contain .center .bottomOptions span:nth-of-type(1),
+.allPage .header .contain .center .bottomOptions span:nth-of-type(2) {
+    font-weight: 700;
+    color: red;
+}
+
+.allPage .header .contain .center .bottomOptions span:hover {
+    margin-left: 1px;
+    color: red;
+}
