@@ -141,7 +141,7 @@ body {
 
 .allPage .header .contain .center .topSearch .search {
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .allPage .header .contain .center .topSearch input {
@@ -195,6 +195,15 @@ body {
     line-height: 34px;
 }
 
+.allPage .header .contain .center .topSearch .shopStore:hover {
+    border: 1px solid #c81623;
+    border-bottom: none;
+}
+
+.allPage .header .contain .center .topSearch .shopStore:hover .busInfo {
+    display: block;
+}
+
 .allPage .header .contain .center .topSearch .shopStore .storeBus {
     display: inline-block;
     width: 15px;
@@ -219,13 +228,58 @@ body {
     text-align: center;
     border-radius: 7px;
     font-size: 12px;
-    background-color: red;
+    background-color: #c81623;
     color: white;
+}
+
+.allPage .header .contain .center .topSearch .shopStore .busInfo {
+    position: absolute;
+    display: none;
+    top: 32px;
+    right: -1px;
+    width: 300px;
+    height: 65px;
+    line-height: 65px;
+    border: 1px solid #c81623;
+    background-color: white;
+    z-index: 3;
+    text-align: center;
+}
+
+.allPage .header .contain .center .topSearch .shopStore .busInfo img {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50px;
+    transform: translate(-50%, -50%);
+}
+
+.allPage .header .contain .center .topSearch .shopStore .busInfo span {
+    /* vertical-align: middle; */
+    /* position: absolute; */
+    padding-left: 50px;
+}
+
+.allPage .header .contain .center .topSearch .shopStore .busInfo::after {
+    position: absolute;
+    top: -1px;
+    right: 0;
+    display: block;
+    float: right;
+    width: 104px;
+    height: 1px;
+    content: '';
+    background-color: white;
 }
 
 .allPage .header .contain .center .topSearch .shopStore a {
     /* vertical-align: middle; */
     color: red;
+}
+
+.allPage .header .contain .center .topSearch .hotWords {
+    position: relative;
 }
 
 .allPage .header .contain .center .topSearch .hotWords a {
@@ -243,6 +297,8 @@ body {
 }
 
 .allPage .header .contain .center .bottomOptions {
+    position: relative;
+    /* z-index: 40; */
     padding-top: 20px;
     width: 100%;
     font-size: 15px;
@@ -262,4 +318,164 @@ body {
 .allPage .header .contain .center .bottomOptions span:hover {
     margin-left: 1px;
     color: red;
+}
+
+.allPage .main {
+    height: 480px;
+}
+
+.allPage .main .mainArea {
+    width: 990px;
+    height: 100%;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+}
+
+.allPage .main .mainArea .leftNav {
+    position: relative;
+    float: left;
+    width: 190px;
+    height: 100%;
+    margin-right: 10px;
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+}
+
+.allPage .main .mainArea .leftNav .navAllList {
+    margin-top: 10px;
+    padding: 10px 0;
+    width: 100%;
+    height: 450px;
+    background-color: #fefefe;
+    color: #636363;
+}
+
+.allPage .main .mainArea .leftNav .navAllList .content-menu {
+    height: 25px;
+    line-height: 25px;
+    padding-left: 18px
+}
+
+.allPage .main .mainArea .leftNav .navAllList .content-menu:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+.allPage .main .mainArea .leftNav .navAllList .content-menu a {
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.allPage .main .mainArea .leftNav .navAllList .content-menu a:hover {
+    color: #c81623;
+    transition: color 0.2s ease;
+}
+
+.allPage .main .mainArea .leftNav .menu-on {
+    position: absolute;
+    left: 191px;
+    top: 10px;
+    width: 798px;
+    min-height: 468px;
+    border: 1px solid #f7f7f7;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, .3);
+}
+
+.allPage .main .mainArea .leftNav .menu-on .cart-part {
+    padding: 20px 0 10px;
+    width: 600px;
+}
+
+.allPage .main .mainArea .leftNav .menu-on .channel {
+    padding-left: 10px;
+    height: 24px;
+}
+
+.allPage .main .mainArea .leftNav .menu-on .channel a {
+    float: left;
+    margin-right: 10px;
+    height: 24px;
+    line-height: 24px;
+    background-color: #333;
+    padding: 0 10px;
+    color: #fff;
+}
+
+.allPage .main .mainArea .leftNav .menu-on .channel a:hover {
+    background-color: #c81623;
+    color: #fff;
+}
+
+.allPage .main .mainArea .leftNav .menu-on .channel a>span {
+    margin-left: 5px;
+}
+
+.allPage .main .mainArea .leftNav .menu-on .all-kinds {
+    padding: 10px 0 0 20px;
+}
+
+.allPage .main .mainArea .leftNav .menu-on .cart-part .all-kinds dl {
+    position: relative;
+    padding-left: 80px;
+    /* border: 1px solid green; */
+}
+
+.allPage .main .mainArea .leftNav .menu-on .cart-part .all-kinds dl dt {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 60px;
+    text-align: right;
+    font-weight: 700;
+    white-space: nowrap;
+    /* border: 1px solid green; */
+}
+
+.allPage .main .mainArea .leftNav .menu-on .cart-part .all-kinds dl dt a {
+    color: #000
+}
+
+.allPage .main .mainArea .leftNav .menu-on .cart-part .all-kinds dl dt a:hover {
+    color: #c81623;
+}
+
+.allPage .main .mainArea .leftNav .menu-on .cart-part .all-kinds dl dt span {
+    margin-left: 5px;
+}
+
+.allPage .main .mainArea .leftNav .menu-on .cart-part .all-kinds dl dd {
+    overflow: hidden;
+}
+
+.allPage .main .mainArea .leftNav .menu-on .cart-part .all-kinds dl dd a {
+    float: left;
+    margin: 3px 0;
+    padding: 0 7px;
+    height: 17px;
+    line-height: 17px;
+    color: #666;
+    cursor: pointer;
+}
+
+.allPage .main .mainArea .leftNav .menu-on .cart-part .all-kinds dl dd a:hover {
+    color: #c81623;
+}
+
+.allPage .main .mainArea .swiperArea {
+    float: left;
+    width: 590px;
+    height: 100%;
+    margin-right: 10px;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+.allPage .main .mainArea .rightOther {
+    float: left;
+    width: 190px;
+    height: 100%;
+    border: 1px solid red;
+    box-sizing: border-box;
 }
