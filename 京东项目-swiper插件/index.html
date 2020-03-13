@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东项目</title>
+</head>
+
+<body>
+    <!-- 
+        轮播插件需要传入的参数：
+        图片数组；
+        尺寸；
+        动画方式；
+        有无翻页按钮；
+        有无小圆点；
+
+     -->
+    <div class="wrapper"></div>
+    <div class="demo"></div>
+    <script src="./src/jquery-3.4.1.js"></script>
+    <script src="./src/jquery.easing.min.js"></script>
+    <script src="./src/swiper.js"></script>
+
+    <script>
+        $('.wrapper').swiper({
+            imgArr: [
+                'https://img12.360buyimg.com/babel/s1180x940_jfs/t1/85809/25/13704/100868/5e5c6308E3d591a94/bd7760172e73b017.jpg.webp',
+                'https://img12.360buyimg.com/pop/s1180x940_jfs/t1/86298/33/13477/99746/5e58d079E969ea839/170941f7e8e822a1.jpg.webp',
+                'https://img13.360buyimg.com/pop/s1180x940_jfs/t1/107240/5/1647/103551/5e002016E0e36ba22/236fc2f3e8f68e33.jpg.webp',
+                'https://imgcps.jd.com/ling/100005171461/56yU6K6w5pys57K-6YCJ5aSn54mM/5aW956S85LiN5pat/p-5bd8253082acdd181d02fa68/f1a476e4/590x470.jpg',
+                'https://img11.360buyimg.com/pop/s1180x940_jfs/t1/94077/40/13431/91413/5e57629eE39ab060a/4adceb3e5e3863fe.jpg.webp',
+                'https://img14.360buyimg.com/babel/s1180x940_jfs/t1/95536/21/13800/74692/5e5dd0e1E4437cd3a/3471b54be70e5189.jpg.webp',
+                'https://img10.360buyimg.com/babel/s1180x940_jfs/t1/90966/12/13849/94449/5e5dd103E999afa6f/263c188c47d49894.jpg.webp'
+            ],
+            divWidth: 500,
+            divHeight: 400,
+            animateStyle: 'fade',
+            turnBtn: true,
+            smallCircle: true,
+            autoTime: 3000,
+            isAutoChange: true
+        })
+        $('.demo').swiper({
+            imgArr: [
+                'https://img12.360buyimg.com/babel/s1180x940_jfs/t1/85809/25/13704/100868/5e5c6308E3d591a94/bd7760172e73b017.jpg.webp',
+                'https://img12.360buyimg.com/pop/s1180x940_jfs/t1/86298/33/13477/99746/5e58d079E969ea839/170941f7e8e822a1.jpg.webp',
+                'https://img13.360buyimg.com/pop/s1180x940_jfs/t1/107240/5/1647/103551/5e002016E0e36ba22/236fc2f3e8f68e33.jpg.webp',
+                'https://imgcps.jd.com/ling/100005171461/56yU6K6w5pys57K-6YCJ5aSn54mM/5aW956S85LiN5pat/p-5bd8253082acdd181d02fa68/f1a476e4/590x470.jpg',
+                'https://img11.360buyimg.com/pop/s1180x940_jfs/t1/94077/40/13431/91413/5e57629eE39ab060a/4adceb3e5e3863fe.jpg.webp',
+                'https://img14.360buyimg.com/babel/s1180x940_jfs/t1/95536/21/13800/74692/5e5dd0e1E4437cd3a/3471b54be70e5189.jpg.webp',
+                'https://img10.360buyimg.com/babel/s1180x940_jfs/t1/90966/12/13849/94449/5e5dd103E999afa6f/263c188c47d49894.jpg.webp'
+            ],
+            divWidth: 400,
+            divHeight: 300,
+            animateStyle: 'animate',
+            turnBtn: true,
+            smallCircle: false,
+            autoTime: 4000,
+            isAutoChange: true
+        })
+    </script>
+</body>
+
+</html>
