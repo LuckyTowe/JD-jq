@@ -32,7 +32,6 @@
         }
         initStyle() {
             let self = this;
-            console.log(this.wrap)
             this.wrap.css({
                 position: 'relative'
             }).hover(function() {
